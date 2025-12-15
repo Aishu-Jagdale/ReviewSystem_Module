@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+
+   
+    <div class="left-box">
+        <h2>Add Review</h2>
+
+        <form id="reviewForm">
+            <label>Username:</label>
+            <input type="text" id="username" required>
+
+            <label>Comment:</label>
+            <textarea id="comment" required></textarea>
+
+            <label>Rating (1–5):</label>
+            <input type="number" id="rating" min="1" max="5" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    
+    <div class="right-box">
+        <h2>All Reviews</h2>
+        <div id="reviewList"></div>
+    </div>
+
+</div>
+<script src="logic.js"></script>
+
+</body>
+</html>
